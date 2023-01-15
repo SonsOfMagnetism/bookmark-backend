@@ -6,14 +6,8 @@ const app = express()
 const mongoose = require("./models/connection")
 const cors = require("cors")
 const morgan = require("morgan")
+const Bookmark = require('./models/bookmark')
 
-// Models
-const BookmarkSchema = new mongoose.Schema({
-    title: String,
-    url: String
-})
-
-const Bookmark = mongoose.model("Bookmark", BookmarkSchema)
 
 // Middleware
 app.use(cors())

@@ -1,6 +1,6 @@
 // Import Dependencies
-const mongoose = require("/connection")
-const Bookmark = require("./connection")
+const mongoose = require("./connection")
+const Bookmark = require("./bookmark")
 
 // Seed Code
 mongoose.connection.on("open", () => {
